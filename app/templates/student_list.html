@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block context %}
+    {% for student in students %}
+        <p>{{ student.name }}</p>
+    {% endfor %}
+{% endblock %}
