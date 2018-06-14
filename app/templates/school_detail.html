@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block context %}
+        <p>{{ school.name }}</p>
+        <p>{{ school.description}}</p>
+        <p>
+            재학생 명단 :<br><br>
+            {% for student in school.student_set.all %}
+            {{ student }}
+        </p>
+    {% endfor %}
+{% endblock %}
