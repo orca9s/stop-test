@@ -5,11 +5,20 @@ from education.models import School, Student
 
 
 def school_list(request):
-    school = School.objects.all()
+    schools = School.objects.all()
 
-    return HttpResponse(school)
+    context = {
+        'schools': schools,
+    }
+
+    return render(request, 'school_list.html', context)
+
 
 def student_list(request):
-    student = Student.objects.all()
+    students = Student.objects.all()
 
-    return HttpResponse(student)
+    context = {
+        'students': students
+    }
+
+    return render(request, context)
