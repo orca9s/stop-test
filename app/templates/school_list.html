@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block context %}
+    {% for school in schools %}
+        <p>{{ school.name }}</p>
+    {% endfor %}
+{% endblock %}
