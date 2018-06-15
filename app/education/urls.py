@@ -6,5 +6,5 @@ urlpatterns = [
     url(r'^school/$', school_list),
     url(r'^school/(\d)/$', school_detail),
     url(r'^student/$', student_list),
-    url(r'^student/(\d)/$', student_detail)
+    url(r'^student/(\d)/$', student_detail),
 ]
